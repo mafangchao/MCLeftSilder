@@ -10,6 +10,13 @@
 
 @implementation MCMainNavgationVC
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    [self.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
+    // 设置渲染的颜色
+    [self.navigationBar setTintColor:[UIColor whiteColor]];
+}
+
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
     [super pushViewController:viewController animated:animated];

@@ -37,19 +37,23 @@
 -(void)initRootViewController{
     
     MCFirstPageVIewController *firstVC = [[MCFirstPageVIewController alloc] init];
+    
     UINavigationController *firstNav = [[MCMainNavgationVC alloc] initWithRootViewController:firstVC];
     firstNav.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
-    firstNav.tabBarItem.title = @"首页";
-    
+    firstVC.title = @"首页";
+    firstVC.navigationController.navigationBar.barTintColor = [UIColor redColor];
     MCSecondPageViewController *secondVC = [[MCSecondPageViewController alloc] init];
+//    secondVC.view.backgroundColor = [UIColor whiteColor];
     UINavigationController *secondNav = [[MCMainNavgationVC alloc] initWithRootViewController:secondVC];
     secondNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
-    secondNav.tabBarItem.title = @"设置";
+    secondVC.title = @"设置";
+    
     
     
     UITabBarController *tabVC = [[UITabBarController alloc] init];
     [tabVC setViewControllers:@[firstNav,secondNav]];
     tabVC.tabBar.tintColor = [UIColor orangeColor];
+//    tabVC.tabBar.barTintColor = [UIColor grayColor];
     MCLeftSortsViewController *leftVC = [[MCLeftSortsViewController alloc] init];
     MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
     self.window.rootViewController = rootVC;

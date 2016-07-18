@@ -9,6 +9,7 @@
 #import "MCLeftSortsViewController.h"
 #import "MCLeftSliderManager.h"
 #import "MCOtherViewController.h"
+#import "DKNightVersion.h"
 
 @interface MCLeftSortsViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -31,6 +32,18 @@
     tableview.delegate  = self;
     tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:tableview];
+    
+    @weakify(self);
+    [self addColorChangedBlock:^{
+        @strongify(self);
+        self.tableview.nightBackgroundColor = UIColorFromRGB(0x343434);
+        self.tableview.nightSeparatorColor = UIColorFromRGB(0x313131);
+//        navigationLabel.nightTextColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.nightBarTintColor = UIColorFromRGB(0x444444);
+        self.navigationItem.leftBarButtonItem.nightTintColor = [UIColor whiteColor];
+        self.navigationItem.rightBarButtonItem.nightTintColor = [UIColor whiteColor];
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +107,22 @@
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
     view.backgroundColor = [UIColor clearColor];
+    UISwitch *lightButton = [UISwitch new];
+    
+    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
+    lightButton.frame = CGRectMake(50, 50, 200, 44);
+    
+    [view addSubview:lightButton];
     return view;
 }
+
+-(void)changeLight{
+    NSLog(@"daindad");
+    if ([DKNightVersionManager currentThemeVersion] == DKThemeVersionNight) {
+        [DKNightVersionManager dawnComing];
+    } else {
+        [DKNightVersionManager nightFalling];
+    }
+}
+
 @end

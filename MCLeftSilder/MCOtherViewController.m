@@ -7,6 +7,7 @@
 //
 
 #import "MCOtherViewController.h"
+#import "DKNightVersion.h"
 
 @interface MCOtherViewController ()
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor brownColor];
+//    self.view.backgroundColor = [UIColor brownColor];
+    @weakify(self);
+    [self addColorChangedBlock:^{
+        @strongify(self);
+        self.view.normalBackgroundColor = [UIColor whiteColor];
+        self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
+        self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

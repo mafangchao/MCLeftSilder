@@ -80,11 +80,31 @@
         self.closed = YES;//初始时侧滑窗关闭
         [MCLeftSliderManager  sharedInstance].LeftSlideVC = self;
         [MCLeftSliderManager sharedInstance].mainNavigationController = mainVC.viewControllers.firstObject;
-    }
+        UINavigationController *navVC =(UINavigationController *)mainVC.viewControllers.firstObject;
+        UIViewController *firstVC = navVC.viewControllers.firstObject;
+        UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        menuBtn.frame = CGRectMake(0, 0, 20, 18);
+        [menuBtn setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+        [menuBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
+        firstVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
+    
+}
+    
     
     return self;
 }
-
+- (void) openOrCloseLeftList
+{
+    
+    if ([MCLeftSliderManager sharedInstance].LeftSlideVC.closed)
+    {
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC openLeftView];
+    }
+    else
+    {
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];
+    }
+}
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
