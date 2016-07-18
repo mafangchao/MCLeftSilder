@@ -51,7 +51,7 @@
  @result instancetype 初始化生成的对象
  */
 - (instancetype)initWithLeftView:(UIViewController *)leftVC
-                     andMainView:(UIViewController *)mainVC;
+                     andMainView:(UITabBarController *)mainVC;
 
 /**
  @brief 关闭左视图

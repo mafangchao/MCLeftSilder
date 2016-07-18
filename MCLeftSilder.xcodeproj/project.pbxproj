@@ -22,6 +22,7 @@
 		81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */; };
 		81D466681D3C6D8F0046A783 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466661D3C6D8F0046A783 /* UIView_extra.m */; };
 		81D4666B1D3C70690046A783 /* MCMainNavgationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4666A1D3C70690046A783 /* MCMainNavgationVC.m */; };
+		81D4666E1D3CAC7C0046A783 /* MCLeftSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4666D1D3CAC7C0046A783 /* MCLeftSliderManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,10 @@
 		81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSlideViewController.m; sourceTree = "<group>"; };
 		81D466651D3C6D8F0046A783 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		81D466661D3C6D8F0046A783 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
-		81D466691D3C70690046A783 /* MCMainNavgationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainNavgationVC.h; sourceTree = "<group>"; };
-		81D4666A1D3C70690046A783 /* MCMainNavgationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainNavgationVC.m; sourceTree = "<group>"; };
+		81D466691D3C70690046A783 /* MCMainNavgationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMainNavgationVC.h; path = ../MCMainNavgationVC.h; sourceTree = "<group>"; };
+		81D4666A1D3C70690046A783 /* MCMainNavgationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMainNavgationVC.m; path = ../MCMainNavgationVC.m; sourceTree = "<group>"; };
+		81D4666C1D3CAC7C0046A783 /* MCLeftSliderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLeftSliderManager.h; path = ../MCLeftSliderManager.h; sourceTree = "<group>"; };
+		81D4666D1D3CAC7C0046A783 /* MCLeftSliderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLeftSliderManager.m; path = ../MCLeftSliderManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +138,6 @@
 				81D4665A1D3C6D2B0046A783 /* MCOtherViewController.m */,
 				81D4665B1D3C6D2B0046A783 /* MCSecondPageViewController.h */,
 				81D4665C1D3C6D2B0046A783 /* MCSecondPageViewController.m */,
-				81D466691D3C70690046A783 /* MCMainNavgationVC.h */,
-				81D4666A1D3C70690046A783 /* MCMainNavgationVC.m */,
 				81D4662C1D3C6C8C0046A783 /* Assets.xcassets */,
 				81D4662E1D3C6C8C0046A783 /* LaunchScreen.storyboard */,
 				81D466311D3C6C8C0046A783 /* Info.plist */,
@@ -175,10 +176,14 @@
 		81D466621D3C6D8F0046A783 /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				81D466691D3C70690046A783 /* MCMainNavgationVC.h */,
+				81D4666A1D3C70690046A783 /* MCMainNavgationVC.m */,
 				81D466631D3C6D8F0046A783 /* MCLeftSlideViewController.h */,
 				81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */,
 				81D466651D3C6D8F0046A783 /* UIView_extra.h */,
 				81D466661D3C6D8F0046A783 /* UIView_extra.m */,
+				81D4666C1D3CAC7C0046A783 /* MCLeftSliderManager.h */,
+				81D4666D1D3CAC7C0046A783 /* MCLeftSliderManager.m */,
 			);
 			path = LeftSlideViewController;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				81D4661F1D3C6C8C0046A783 /* main.m in Sources */,
 				81D4665F1D3C6D2B0046A783 /* MCMainPageViewController.m in Sources */,
 				81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */,
+				81D4666E1D3CAC7C0046A783 /* MCLeftSliderManager.m in Sources */,
 				81D4665E1D3C6D2B0046A783 /* MCLeftSortsViewController.m in Sources */,
 				81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */,
 			);
@@ -408,9 +414,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -450,6 +457,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
@@ -458,8 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCLeftSilder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.machao.MCLeftSilder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.machao.MCLeftSilder2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -469,8 +478,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCLeftSilder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.machao.MCLeftSilder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.machao.MCLeftSilder2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -540,6 +550,7 @@
 				81D4664C1D3C6C8C0046A783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D4664D1D3C6C8C0046A783 /* Build configuration list for PBXNativeTarget "MCLeftSilderTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +559,7 @@
 				81D4664F1D3C6C8C0046A783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D466501D3C6C8C0046A783 /* Build configuration list for PBXNativeTarget "MCLeftSilderUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +568,7 @@
 				81D466521D3C6C8C0046A783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

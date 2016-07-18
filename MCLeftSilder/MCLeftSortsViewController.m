@@ -7,7 +7,7 @@
 //
 
 #import "MCLeftSortsViewController.h"
-#import "AppDelegate.h"
+#import "MCLeftSliderManager.h"
 #import "MCOtherViewController.h"
 
 @interface MCLeftSortsViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -76,10 +76,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     MCOtherViewController *vc = [[MCOtherViewController alloc] init];
-    [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
-    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+    
+    [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];//关闭左侧抽屉
+    [[MCLeftSliderManager sharedInstance].mainNavigationController pushViewController:vc animated:NO];
+//    if (indexPath.row == 0) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=General&path=Bluetooth"]];
+//    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

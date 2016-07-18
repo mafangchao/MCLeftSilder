@@ -6,6 +6,7 @@
 //  Copyright © 2016年 machao. All rights reserved.
 //
 #import "MCLeftSlideViewController.h"
+#import "MCLeftSliderManager.h"
 
 
 @interface MCLeftSlideViewController ()<UIGestureRecognizerDelegate>
@@ -26,6 +27,7 @@
     // Do any additional setup after loading the view.
 }
 
+
 /**
  @brief 初始化侧滑控制器
  @param leftVC 左视图控制器
@@ -33,7 +35,7 @@
  @result instancetype 初始化生成的对象
  */
 - (instancetype)initWithLeftView:(UIViewController *)leftVC
-                     andMainView:(UIViewController *)mainVC
+                     andMainView:(UITabBarController *)mainVC
 {
     if(self = [super init]){
         self.speedf = vSpeedFloat;
@@ -76,8 +78,10 @@
         
         [self.view addSubview:self.mainVC.view];
         self.closed = YES;//初始时侧滑窗关闭
-        
+        [MCLeftSliderManager  sharedInstance].LeftSlideVC = self;
+        [MCLeftSliderManager sharedInstance].mainNavigationController = mainVC.viewControllers.firstObject;
     }
+    
     return self;
 }
 

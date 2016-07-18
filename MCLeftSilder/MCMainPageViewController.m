@@ -7,8 +7,9 @@
 //
 
 #import "MCMainPageViewController.h"
-#import "AppDelegate.h"
+#import "MCLeftSliderManager.h"
 #define vBackBarButtonItemName  @"backArrow.png"    //导航条返回默认图片名
+
 @interface MCMainPageViewController ()
 
 @end
@@ -24,17 +25,15 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.LeftSlideVC setPanEnabled:NO];
+    
+    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
+    
+    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
 }
 
 @end

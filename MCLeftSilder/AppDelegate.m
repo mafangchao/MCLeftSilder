@@ -12,6 +12,8 @@
 #import "MCFirstPageVIewController.h"
 #import "MCSecondPageViewController.h"
 #import "MCMainNavgationVC.h"
+#import "MCLeftSlideViewController.h"
+#import "MCLeftSliderManager.h"
 
 @interface AppDelegate ()
 
@@ -35,9 +37,9 @@
 -(void)initRootViewController{
     
     MCFirstPageVIewController *firstVC = [[MCFirstPageVIewController alloc] init];
-    self.mainNavigationController = [[MCMainNavgationVC alloc] initWithRootViewController:firstVC];
-    self.mainNavigationController.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
-    self.mainNavigationController.tabBarItem.title = @"首页";
+    UINavigationController *firstNav = [[MCMainNavgationVC alloc] initWithRootViewController:firstVC];
+    firstNav.tabBarItem.image = [UIImage imageNamed:@"tab_buddy_nor"];
+    firstNav.tabBarItem.title = @"首页";
     
     MCSecondPageViewController *secondVC = [[MCSecondPageViewController alloc] init];
     UINavigationController *secondNav = [[MCMainNavgationVC alloc] initWithRootViewController:secondVC];
@@ -46,12 +48,11 @@
     
     
     UITabBarController *tabVC = [[UITabBarController alloc] init];
-    [tabVC setViewControllers:@[self.mainNavigationController,secondNav]];
-    tabVC.tabBar.backgroundColor = [UIColor redColor];
+    [tabVC setViewControllers:@[firstNav,secondNav]];
     tabVC.tabBar.tintColor = [UIColor orangeColor];
     MCLeftSortsViewController *leftVC = [[MCLeftSortsViewController alloc] init];
-    self.LeftSlideVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
-    self.window.rootViewController = self.LeftSlideVC;
+    MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
+    self.window.rootViewController = rootVC;
 }
 
 

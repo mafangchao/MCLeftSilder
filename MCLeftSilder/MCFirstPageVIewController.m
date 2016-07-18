@@ -8,6 +8,7 @@
 
 #import "MCFirstPageVIewController.h"
 #import "AppDelegate.h"
+#import "MCLeftSliderManager.h"
 
 @implementation MCFirstPageVIewController
 
@@ -24,15 +25,14 @@
 }
 - (void) openOrCloseLeftList
 {
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    if (tempAppDelegate.LeftSlideVC.closed)
+
+    if ([MCLeftSliderManager sharedInstance].LeftSlideVC.closed)
     {
-        [tempAppDelegate.LeftSlideVC openLeftView];
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC openLeftView];
     }
     else
     {
-        [tempAppDelegate.LeftSlideVC closeLeftView];
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];
     }
 }
 
