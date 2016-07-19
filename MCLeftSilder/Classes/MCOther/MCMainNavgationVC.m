@@ -7,6 +7,8 @@
 //
 
 #import "MCMainNavgationVC.h"
+#import "MCLeftSliderManager.h"
+
 
 @implementation MCMainNavgationVC
 
@@ -20,11 +22,13 @@
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
+    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:NO];
     [super pushViewController:viewController animated:animated];
     
 }
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
+    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
     return  [super popViewControllerAnimated:animated];
 }
 

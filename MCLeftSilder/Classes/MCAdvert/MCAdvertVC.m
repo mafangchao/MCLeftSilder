@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.title = @"点击进入广告链接";
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kscreenWidth, kscreenHeight+64)];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight+64)];
     _webView.backgroundColor = MCBaseColor;
     _webView.delegate = self;
     _webView.hidden = YES;
@@ -41,7 +41,7 @@
         self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
     }];
-    [LoadingAnimationView loadingViewWithRect:CGRectMake(0, 0, kscreenWidth, kscreenHeight+64) OnView:self.view];
+    [LoadingAnimationView loadingViewWithRect:CGRectMake(0, 0, kScreenWidth, kScreenHeight+64) OnView:self.view];
 
 }
 

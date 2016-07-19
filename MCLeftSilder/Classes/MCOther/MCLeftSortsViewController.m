@@ -21,12 +21,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImageView *imageview = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    imageview.image = [UIImage imageNamed:@"leftbackiamge"];
-    [self.view addSubview:imageview];
+//    UIImageView *imageview = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    imageview.image = [UIImage imageNamed:@"leftbackiamge"];
+//    [self.view addSubview:imageview];
 
     UITableView *tableview = [[UITableView alloc] init];
     self.tableview = tableview;
+    tableview.sectionHeaderHeight = 0;
+    tableview.sectionFooterHeight = 0;
     tableview.frame = self.view.bounds;
     tableview.dataSource = self;
     tableview.delegate  = self;
@@ -36,6 +38,9 @@
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
+        self.view.normalBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leftbackiamge"]];
+        self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
+        self.tableview.normalBackgroundColor = [UIColor clearColor];
         self.tableview.nightBackgroundColor = UIColorFromRGB(0x343434);
         self.tableview.nightSeparatorColor = UIColorFromRGB(0x313131);
 //        navigationLabel.nightTextColor = [UIColor whiteColor];
@@ -43,6 +48,12 @@
         self.navigationItem.leftBarButtonItem.nightTintColor = [UIColor whiteColor];
         self.navigationItem.rightBarButtonItem.nightTintColor = [UIColor whiteColor];
     }];
+    UISwitch *lightButton = [UISwitch new];
+    
+    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
+    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
+    
+    [self.view addSubview:lightButton];
 
 }
 
@@ -101,38 +112,7 @@
 //    }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 180;
-}
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
-    view.backgroundColor = [UIColor clearColor];
-//    UISwitch *lightButton = [UISwitch new];
-//    
-//    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
-//    lightButton.frame = CGRectMake(50, 50, 200, 44);
-//    
-//    [view addSubview:lightButton];
-    return view;
-}
--(CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    
-    return 180;
-}
 
--(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
-    view.backgroundColor = [UIColor clearColor];
-    UISwitch *lightButton = [UISwitch new];
-    
-    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
-    lightButton.frame = CGRectMake(50, 50, 200, 44);
-    
-    [view addSubview:lightButton];
-    return view;
-}
 
 -(void)changeLight{
     NSLog(@"daindad");

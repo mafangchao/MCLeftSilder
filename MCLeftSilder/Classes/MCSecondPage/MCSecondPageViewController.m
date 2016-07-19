@@ -8,6 +8,7 @@
 
 #import "MCSecondPageViewController.h"
 #import "DKNightVersion.h"
+#import "MCLeftSliderManager.h"
 @implementation MCSecondPageViewController
 
 -(void)viewDidLoad{
@@ -27,5 +28,18 @@
 
     }];
 }
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    
+//    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:NO];
+//}
+//
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    
+//    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
+//}
 
 @end
