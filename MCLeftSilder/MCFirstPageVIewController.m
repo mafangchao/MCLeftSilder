@@ -15,7 +15,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
 
-<<<<<<< Updated upstream
+
     UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
     navigationLabel.text = @"首页";
     navigationLabel.textAlignment = NSTextAlignmentCenter;
@@ -31,15 +31,7 @@
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
         self.tabBarController.tabBar.nightBarTintColor = [UIColor blackColor];
     }];
-=======
-    self.view.backgroundColor = [UIColor yellowColor];
-//    
-//    UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    menuBtn.frame = CGRectMake(0, 0, 20, 18);
-//    [menuBtn setBackgroundImage:[UIImage imageNamed:@"newComment"] forState:UIControlStateNormal];
-//    [menuBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
->>>>>>> Stashed changes
+
 }
 //- (void) openOrCloseLeftList
 //{

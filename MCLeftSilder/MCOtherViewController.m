@@ -17,11 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< Updated upstream
-//    self.view.backgroundColor = [UIColor brownColor];
-=======
-    self.view.backgroundColor = [UIColor brownColor];
->>>>>>> Stashed changes
+
+
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
