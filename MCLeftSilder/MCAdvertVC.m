@@ -20,9 +20,9 @@
     [super viewDidLoad];
 //    self.title = @"点击进入广告链接";
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kscreenWidth, kscreenHeight+64)];
-    _webView.backgroundColor = [UIColor whiteColor];
+    _webView.backgroundColor = MCBaseColor;
     _webView.delegate = self;
-//    _webView.hidden = YES;
+    _webView.hidden = YES;
     if (!self.adUrl) {
         self.adUrl = @"http://www.jianshu.com/users/c3bedfe6664d/latest_articles";
     }
@@ -36,11 +36,12 @@
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
-        self.view.normalBackgroundColor = [UIColor whiteColor];
+        self.view.normalBackgroundColor = MCBaseColor;
         navigationLabel.nightTextColor = [UIColor whiteColor];
         self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
     }];
+    [LoadingAnimationView loadingViewWithRect:CGRectMake(0, 0, kscreenWidth, kscreenHeight+64) OnView:self.view];
 
 }
 
@@ -49,5 +50,16 @@
     _adUrl = adUrl;
 }
 
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [LoadingAnimationView hideFromView:self.view];
+    _webView.hidden = NO;
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [LoadingAnimationView hideFromView:self.view];
+}
 
 @end
