@@ -109,6 +109,22 @@
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
     view.backgroundColor = [UIColor clearColor];
+//    UISwitch *lightButton = [UISwitch new];
+//    
+//    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
+//    lightButton.frame = CGRectMake(50, 50, 200, 44);
+//    
+//    [view addSubview:lightButton];
+    return view;
+}
+-(CGFloat )tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return 180;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
+    view.backgroundColor = [UIColor clearColor];
     UISwitch *lightButton = [UISwitch new];
     
     [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
