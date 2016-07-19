@@ -6,8 +6,8 @@
 //  Copyright © 2016年 machao. All rights reserved.
 //
 
-#import "MCMainPageViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MCFirstPageVIewController : MCMainPageViewController
+@interface MCFirstPageVIewController : UIViewController
 
 @end

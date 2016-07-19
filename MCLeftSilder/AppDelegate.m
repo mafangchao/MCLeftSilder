@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MCMainPageViewController.h"
 #import "MCLeftSortsViewController.h"
 #import "MCFirstPageVIewController.h"
 #import "MCSecondPageViewController.h"

@@ -28,7 +28,6 @@
 		81D466461D3C6C8C0046A783 /* MCLeftSilderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466451D3C6C8C0046A783 /* MCLeftSilderUITests.m */; };
 		81D4665D1D3C6D2B0046A783 /* MCFirstPageVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466541D3C6D2B0046A783 /* MCFirstPageVIewController.m */; };
 		81D4665E1D3C6D2B0046A783 /* MCLeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466561D3C6D2B0046A783 /* MCLeftSortsViewController.m */; };
-		81D4665F1D3C6D2B0046A783 /* MCMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */; };
 		81D466601D3C6D2B0046A783 /* MCOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4665A1D3C6D2B0046A783 /* MCOtherViewController.m */; };
 		81D466611D3C6D2B0046A783 /* MCSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4665C1D3C6D2B0046A783 /* MCSecondPageViewController.m */; };
 		81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */; };
@@ -101,8 +100,6 @@
 		81D466541D3C6D2B0046A783 /* MCFirstPageVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCFirstPageVIewController.m; path = ../../../MCFirstPageVIewController.m; sourceTree = "<group>"; };
 		81D466551D3C6D2B0046A783 /* MCLeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLeftSortsViewController.h; path = ../../../MCLeftSortsViewController.h; sourceTree = "<group>"; };
 		81D466561D3C6D2B0046A783 /* MCLeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLeftSortsViewController.m; path = ../../../MCLeftSortsViewController.m; sourceTree = "<group>"; };
-		81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMainPageViewController.h; path = ../MCMainPageViewController.h; sourceTree = "<group>"; };
-		81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMainPageViewController.m; path = ../MCMainPageViewController.m; sourceTree = "<group>"; };
 		81D466591D3C6D2B0046A783 /* MCOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCOtherViewController.h; path = ../../../MCOtherViewController.h; sourceTree = "<group>"; };
 		81D4665A1D3C6D2B0046A783 /* MCOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCOtherViewController.m; path = ../../../MCOtherViewController.m; sourceTree = "<group>"; };
 		81D4665B1D3C6D2B0046A783 /* MCSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSecondPageViewController.h; path = ../../../MCSecondPageViewController.h; sourceTree = "<group>"; };
@@ -400,8 +397,6 @@
 				81D466661D3C6D8F0046A783 /* UIView_extra.m */,
 				81D4666C1D3CAC7C0046A783 /* MCLeftSliderManager.h */,
 				81D4666D1D3CAC7C0046A783 /* MCLeftSliderManager.m */,
-				81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */,
-				81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */,
 			);
 			path = LeftSlideViewController;
 			sourceTree = "<group>";
@@ -550,7 +545,6 @@
 				81D466601D3C6D2B0046A783 /* MCOtherViewController.m in Sources */,
 				819119D11D3E12850045E6B3 /* UIButton+TitleColor.m in Sources */,
 				81D4661F1D3C6C8C0046A783 /* main.m in Sources */,
-				81D4665F1D3C6D2B0046A783 /* MCMainPageViewController.m in Sources */,
 				81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */,
 				81D4666E1D3CAC7C0046A783 /* MCLeftSliderManager.m in Sources */,
 				819119D01D3E12850045E6B3 /* UIBarButtonItem+TintColor.m in Sources */,
