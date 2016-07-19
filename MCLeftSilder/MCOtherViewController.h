@@ -10,4 +10,6 @@
 
 @interface MCOtherViewController : UIViewController
 
+@property(nonatomic,copy)NSString  * titleName;
+
 @end

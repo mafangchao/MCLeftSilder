@@ -1,0 +1,20 @@
+//
+//  MCPrefixHeader.pch
+//  MCLeftSilder
+//
+//  Created by iOS on 16/7/19.
+//  Copyright © 2016年 iOS. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Macro.h"
+
+
+#define MAS_SHORTHAND
+
+
+
+
+#endif

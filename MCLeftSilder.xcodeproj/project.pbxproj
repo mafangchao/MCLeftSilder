@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		819119AA1D3DF8740045E6B3 /* MCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119A91D3DF8740045E6B3 /* MCContent.m */; };
 		81D4661F1D3C6C8C0046A783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4661E1D3C6C8C0046A783 /* main.m */; };
 		81D466221D3C6C8C0046A783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466211D3C6C8C0046A783 /* AppDelegate.m */; };
 		81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81D466291D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld */; };
@@ -34,6 +35,9 @@
 		81D467001D3CDFBE0046A783 /* UITabBar+BarTintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466F11D3CDFBE0046A783 /* UITabBar+BarTintColor.m */; };
 		81D467011D3CDFBE0046A783 /* UITableView+SeparatorColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466F41D3CDFBE0046A783 /* UITableView+SeparatorColor.m */; };
 		81D467021D3CDFBE0046A783 /* UIView+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466F71D3CDFBE0046A783 /* UIView+BackgroundColor.m */; };
+		81D467051D3DCA9D0046A783 /* MCAdvertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D467041D3DCA9D0046A783 /* MCAdvertVC.m */; };
+		81D467081D3DCBA50046A783 /* MCAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D467071D3DCBA50046A783 /* MCAdvertView.m */; };
+		81D4670B1D3DCF3F0046A783 /* LoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4670A1D3DCF3F0046A783 /* LoadingAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		819119A81D3DF8740045E6B3 /* MCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCContent.h; path = LeftSlideViewController/MCContent.h; sourceTree = "<group>"; };
+		819119A91D3DF8740045E6B3 /* MCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCContent.m; path = LeftSlideViewController/MCContent.m; sourceTree = "<group>"; };
 		81D4661A1D3C6C8C0046A783 /* MCLeftSilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLeftSilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D4661E1D3C6C8C0046A783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81D466201D3C6C8C0046A783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,8 +78,8 @@
 		81D466541D3C6D2B0046A783 /* MCFirstPageVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFirstPageVIewController.m; sourceTree = "<group>"; };
 		81D466551D3C6D2B0046A783 /* MCLeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSortsViewController.h; sourceTree = "<group>"; };
 		81D466561D3C6D2B0046A783 /* MCLeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSortsViewController.m; sourceTree = "<group>"; };
-		81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainPageViewController.h; sourceTree = "<group>"; };
-		81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainPageViewController.m; sourceTree = "<group>"; };
+		81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMainPageViewController.h; path = ../MCMainPageViewController.h; sourceTree = "<group>"; };
+		81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMainPageViewController.m; path = ../MCMainPageViewController.m; sourceTree = "<group>"; };
 		81D466591D3C6D2B0046A783 /* MCOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOtherViewController.h; sourceTree = "<group>"; };
 		81D4665A1D3C6D2B0046A783 /* MCOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOtherViewController.m; sourceTree = "<group>"; };
 		81D4665B1D3C6D2B0046A783 /* MCSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSecondPageViewController.h; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 		81D466F41D3CDFBE0046A783 /* UITableView+SeparatorColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SeparatorColor.m"; sourceTree = "<group>"; };
 		81D466F61D3CDFBE0046A783 /* UIView+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundColor.h"; sourceTree = "<group>"; };
 		81D466F71D3CDFBE0046A783 /* UIView+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundColor.m"; sourceTree = "<group>"; };
+		81D467031D3DCA9D0046A783 /* MCAdvertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAdvertVC.h; sourceTree = "<group>"; };
+		81D467041D3DCA9D0046A783 /* MCAdvertVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAdvertVC.m; sourceTree = "<group>"; };
+		81D467061D3DCBA50046A783 /* MCAdvertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAdvertView.h; sourceTree = "<group>"; };
+		81D467071D3DCBA50046A783 /* MCAdvertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAdvertView.m; sourceTree = "<group>"; };
+		81D467091D3DCF3F0046A783 /* LoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAnimationView.h; sourceTree = "<group>"; };
+		81D4670A1D3DCF3F0046A783 /* LoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAnimationView.m; sourceTree = "<group>"; };
+		81D4670C1D3DD2BE0046A783 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +177,19 @@
 				81D466621D3C6D8F0046A783 /* LeftSlideViewController */,
 				81D466201D3C6C8C0046A783 /* AppDelegate.h */,
 				81D466211D3C6C8C0046A783 /* AppDelegate.m */,
+				819119A81D3DF8740045E6B3 /* MCContent.h */,
+				819119A91D3DF8740045E6B3 /* MCContent.m */,
+				81D467091D3DCF3F0046A783 /* LoadingAnimationView.h */,
+				81D4670A1D3DCF3F0046A783 /* LoadingAnimationView.m */,
+				81D467031D3DCA9D0046A783 /* MCAdvertVC.h */,
+				81D467041D3DCA9D0046A783 /* MCAdvertVC.m */,
+				81D467061D3DCBA50046A783 /* MCAdvertView.h */,
+				81D467071D3DCBA50046A783 /* MCAdvertView.m */,
+				81D4670C1D3DD2BE0046A783 /* Macro.h */,
 				81D466531D3C6D2B0046A783 /* MCFirstPageVIewController.h */,
 				81D466541D3C6D2B0046A783 /* MCFirstPageVIewController.m */,
 				81D466551D3C6D2B0046A783 /* MCLeftSortsViewController.h */,
 				81D466561D3C6D2B0046A783 /* MCLeftSortsViewController.m */,
-				81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */,
-				81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */,
 				81D466591D3C6D2B0046A783 /* MCOtherViewController.h */,
 				81D4665A1D3C6D2B0046A783 /* MCOtherViewController.m */,
 				81D4665B1D3C6D2B0046A783 /* MCSecondPageViewController.h */,
@@ -185,6 +206,7 @@
 		81D4661D1D3C6C8C0046A783 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */,
 				81D4661E1D3C6C8C0046A783 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -219,6 +241,8 @@
 				81D466661D3C6D8F0046A783 /* UIView_extra.m */,
 				81D4666C1D3CAC7C0046A783 /* MCLeftSliderManager.h */,
 				81D4666D1D3CAC7C0046A783 /* MCLeftSliderManager.m */,
+				81D466571D3C6D2B0046A783 /* MCMainPageViewController.h */,
+				81D466581D3C6D2B0046A783 /* MCMainPageViewController.m */,
 			);
 			path = LeftSlideViewController;
 			sourceTree = "<group>";
@@ -467,6 +491,7 @@
 				81D466221D3C6C8C0046A783 /* AppDelegate.m in Sources */,
 				81D4665D1D3C6D2B0046A783 /* MCFirstPageVIewController.m in Sources */,
 				81D4666B1D3C70690046A783 /* MCMainNavgationVC.m in Sources */,
+				819119AA1D3DF8740045E6B3 /* MCContent.m in Sources */,
 				81D466FD1D3CDFBE0046A783 /* UILabel+TextColor.m in Sources */,
 				81D466601D3C6D2B0046A783 /* MCOtherViewController.m in Sources */,
 				81D467011D3CDFBE0046A783 /* UITableView+SeparatorColor.m in Sources */,
@@ -480,10 +505,13 @@
 				81D466F91D3CDFBE0046A783 /* NSObject+Night.m in Sources */,
 				81D466FE1D3CDFBE0046A783 /* UINavigationBar+BarTintColor.m in Sources */,
 				81D4666E1D3CAC7C0046A783 /* MCLeftSliderManager.m in Sources */,
+				81D4670B1D3DCF3F0046A783 /* LoadingAnimationView.m in Sources */,
 				81D466FC1D3CDFBE0046A783 /* UIButton+TitleColor.m in Sources */,
 				81D466FB1D3CDFBE0046A783 /* UIBarButtonItem+TintColor.m in Sources */,
 				81D4665E1D3C6D2B0046A783 /* MCLeftSortsViewController.m in Sources */,
+				81D467081D3DCBA50046A783 /* MCAdvertView.m in Sources */,
 				81D466FF1D3CDFBE0046A783 /* UINavigationBar+TintColor.m in Sources */,
+				81D467051D3DCA9D0046A783 /* MCAdvertVC.m in Sources */,
 				81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MCLeftSilder/MCPrefixHeader.pch";
 				INFOPLIST_FILE = MCLeftSilder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +662,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MCLeftSilder/MCPrefixHeader.pch";
 				INFOPLIST_FILE = MCLeftSilder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

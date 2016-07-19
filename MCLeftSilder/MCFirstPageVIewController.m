@@ -9,6 +9,7 @@
 #import "MCFirstPageVIewController.h"
 #import "DKNightVersion.h"
 #import "MCLeftSliderManager.h"
+#import "MCAdvertVC.h"
 
 @implementation MCFirstPageVIewController
 
@@ -20,7 +21,7 @@
     navigationLabel.text = @"首页";
     navigationLabel.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = navigationLabel;
-
+    
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
@@ -31,21 +32,27 @@
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
         self.tabBarController.tabBar.nightBarTintColor = [UIColor blackColor];
     }];
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushToAd) name:@"pushtoad" object:nil];
+    UISwitch *sw = [UISwitch new];
+    sw.frame = CGRectMake(100, 100, 100, 40);
+    [sw addTarget:self action:@selector(switchClick) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:sw];
 }
-//- (void) openOrCloseLeftList
-//{
-//
-//    if ([MCLeftSliderManager sharedInstance].LeftSlideVC.closed)
-//    {
-//        [[MCLeftSliderManager sharedInstance].LeftSlideVC openLeftView];
-//    }
-//    else
-//    {
-//        [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];
-//    }
-//}
 
+- (void)pushToAd {
+    
+    MCAdvertVC *adVc = [[MCAdvertVC alloc] init];
+    [self.navigationController pushViewController:adVc animated:YES];
+    
+}
 
+-(void)switchClick{
+    MCAdvertVC *adVc = [[MCAdvertVC alloc] init];
+    [self.navigationController pushViewController:adVc animated:YES];
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 @end
