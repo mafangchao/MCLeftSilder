@@ -34,7 +34,10 @@
     tableview.delegate  = self;
     tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:tableview];
-    
+    tableview.backgroundColor = [UIColor clearColor];
+    tableview.frame = CGRectMake(kMainPageDistance, (kScreenHeight - 300)/2, kScreenWidth - kMainPageDistance*1.5, 300);
+    //设置左侧tableview的初始位置和缩放系数
+    tableview.transform = CGAffineTransformMakeScale(kLeftScale, kLeftScale);
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
@@ -49,7 +52,7 @@
         self.navigationItem.rightBarButtonItem.nightTintColor = [UIColor whiteColor];
     }];
     UISwitch *lightButton = [UISwitch new];
-    
+    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +100, kScreenHeight - 50, 200, 44);
     [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
 //    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
     
