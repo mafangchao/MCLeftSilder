@@ -122,6 +122,7 @@
     CGPoint point = [rec translationInView:self.view];
     _scalef = (point.x * self.speedf + _scalef);
 
+    NSLog(@"%f#########",self.mainVC.view.x);
     BOOL needMoveWithTap = YES;  //是否还需要跟随手指移动
     if (((self.mainVC.view.x <= 0) && (_scalef <= 0)) || ((self.mainVC.view.x >= (kScreenWidth - kMainPageDistance )) && (_scalef >= 0)))
     {
@@ -138,6 +139,7 @@
             recCenterX = kScreenWidth * 0.5;
         }
         
+        NSLog(@"%f===--===-=-=--=-",recCenterX);
         CGFloat recCenterY = rec.view.center.y;
         
         rec.view.center = CGPointMake(recCenterX,recCenterY);
@@ -149,16 +151,20 @@
         [rec setTranslation:CGPointMake(0, 0) inView:self.view];
         
         CGFloat leftTabCenterX = kLeftCenterX + ((kScreenWidth - kMainPageDistance) * 0.5 - kLeftCenterX) * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
-
-        NSLog(@"%f",leftTabCenterX);
         
+        CGFloat leftSwitchCenterX = (kLeftCenterX + (((kScreenWidth - kMainPageDistance)/2 +50) * 0.5 - kLeftCenterX)) * (self.mainVC.view.x/ (kScreenWidth - kMainPageDistance));
+        NSLog(@"leftTabCenterX------%f",(self.mainVC.view.x/ (kScreenWidth - kMainPageDistance)));
+        
+        NSLog(@"%f------leftSwitchCenterX",leftSwitchCenterX);
+        
+        NSLog(@"%f=====",(rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance)));
         
         //leftScale kLeftScale~1.0
         CGFloat leftScale = kLeftScale + (1 - kLeftScale) * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         
         self.leftTableview.center = CGPointMake(leftTabCenterX, kScreenHeight * 0.5);
         self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity, leftScale,leftScale);
-//        self.leftSwitch.transform = CGAffineTransformMakeTranslation(<#CGFloat tx#>, <#CGFloat ty#>)
+        self.leftSwitch.center = CGPointMake(leftSwitchCenterX, kScreenHeight - 50);
         //tempAlpha kLeftAlpha~0
         CGFloat tempAlpha = kLeftAlpha - kLeftAlpha * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         self.contentView.alpha = tempAlpha;
@@ -220,6 +226,7 @@
         
         self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
         self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,kLeftScale,kLeftScale);
+        self.leftSwitch.center = CGPointMake(kLeftCenterX, kScreenHeight-50);
         self.contentView.alpha = kLeftAlpha;
         
         [UIView commitAnimations];
@@ -242,6 +249,7 @@
     
     self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
     self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,kLeftScale,kLeftScale);
+    self.leftSwitch.center = CGPointMake(kLeftCenterX, kScreenHeight-50);
     self.contentView.alpha = kLeftAlpha;
     
     [UIView commitAnimations];
@@ -260,6 +268,7 @@
     
     self.leftTableview.center = CGPointMake((kScreenWidth - kMainPageDistance) * 0.5, kScreenHeight * 0.5);
     self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
+    self.leftSwitch.center = CGPointMake(((kScreenWidth - kMainPageDistance)/2 +50) , kScreenHeight-50);
     self.contentView.alpha = 0;
     
     [UIView commitAnimations];
