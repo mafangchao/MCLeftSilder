@@ -9,7 +9,7 @@
 #import "MCLeftSliderManager.h"
 
 
-@interface MCLeftSlideViewController ()<UIGestureRecognizerDelegate>
+@interface MCLeftSlideViewController ()<UIGestureRecognizerDelegate,UITabBarControllerDelegate>
 {
     CGFloat _scalef;  //实时横向位移
 }
@@ -17,6 +17,7 @@
 @property (nonatomic,strong) UITableView *leftTableview;
 @property (nonatomic,assign) CGFloat leftTableviewW;
 @property (nonatomic,strong) UIView *contentView;
+@property(nonatomic,weak)UISwitch * leftSwitch;
 @end
 
 
@@ -42,7 +43,7 @@
         self.leftVC = leftVC;
         self.mainVC = mainVC;
         
-       
+        mainVC.delegate = self;
         [self addChildViewController:self.leftVC];
         [self addChildViewController:self.mainVC];
         //滑动手势
@@ -68,6 +69,8 @@
         for (UIView *obj in self.leftVC.view.subviews) {
             if ([obj isKindOfClass:[UITableView class]]) {
                 self.leftTableview = (UITableView *)obj;
+            }else if ([obj isKindOfClass:[UISwitch class]]){
+                self.leftSwitch = (UISwitch *)obj;
             }
         }
         self.leftTableview.backgroundColor = [UIColor clearColor];
@@ -75,7 +78,7 @@
         //设置左侧tableview的初始位置和缩放系数
         self.leftTableview.transform = CGAffineTransformMakeScale(kLeftScale, kLeftScale);
         self.leftTableview.center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
-        
+        self.leftSwitch.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
         [self.view addSubview:self.mainVC.view];
         self.closed = YES;//初始时侧滑窗关闭
         [MCLeftSliderManager  sharedInstance].LeftSlideVC = self;
@@ -155,7 +158,7 @@
         
         self.leftTableview.center = CGPointMake(leftTabCenterX, kScreenHeight * 0.5);
         self.leftTableview.transform = CGAffineTransformScale(CGAffineTransformIdentity, leftScale,leftScale);
-        
+//        self.leftSwitch.transform = CGAffineTransformMakeTranslation(<#CGFloat tx#>, <#CGFloat ty#>)
         //tempAlpha kLeftAlpha~0
         CGFloat tempAlpha = kLeftAlpha - kLeftAlpha * (rec.view.frame.origin.x / (kScreenWidth - kMainPageDistance));
         self.contentView.alpha = tempAlpha;
@@ -316,6 +319,10 @@
 //        NSLog(@"响应侧滑");
         return YES;
     }
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    [MCLeftSliderManager sharedInstance].mainNavigationController = (UINavigationController *)viewController;
 }
 
 @end

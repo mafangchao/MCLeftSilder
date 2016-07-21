@@ -28,7 +28,12 @@
 }
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
-    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
+    NSLog(@"%@-----%@",self.viewControllers.firstObject,self.viewControllers.lastObject);
+    
+    
+    if (self.viewControllers.count == 2) {
+      [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
+    }
     return  [super popViewControllerAnimated:animated];
 }
 

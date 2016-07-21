@@ -18,7 +18,6 @@
 		819119D51D3E12850045E6B3 /* UITabBar+BarTintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119C61D3E12850045E6B3 /* UITabBar+BarTintColor.m */; };
 		819119D61D3E12850045E6B3 /* UITableView+SeparatorColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119C91D3E12850045E6B3 /* UITableView+SeparatorColor.m */; };
 		819119D71D3E12850045E6B3 /* UIView+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119CC1D3E12850045E6B3 /* UIView+BackgroundColor.m */; };
-		819119E21D3E26CC0045E6B3 /* MCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119DF1D3E26CC0045E6B3 /* MCContent.m */; };
 		819119E31D3E26CC0045E6B3 /* MCLeftSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119E11D3E26CC0045E6B3 /* MCLeftSliderManager.m */; };
 		819119FB1D3E26D70045E6B3 /* MCAdvertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119E71D3E26D70045E6B3 /* MCAdvertVC.m */; };
 		819119FC1D3E26D70045E6B3 /* MCAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119E91D3E26D70045E6B3 /* MCAdvertView.m */; };
@@ -80,8 +79,6 @@
 		819119C91D3E12850045E6B3 /* UITableView+SeparatorColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SeparatorColor.m"; sourceTree = "<group>"; };
 		819119CB1D3E12850045E6B3 /* UIView+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundColor.h"; sourceTree = "<group>"; };
 		819119CC1D3E12850045E6B3 /* UIView+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundColor.m"; sourceTree = "<group>"; };
-		819119DE1D3E26CC0045E6B3 /* MCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCContent.h; sourceTree = "<group>"; };
-		819119DF1D3E26CC0045E6B3 /* MCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCContent.m; sourceTree = "<group>"; };
 		819119E01D3E26CC0045E6B3 /* MCLeftSliderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSliderManager.h; sourceTree = "<group>"; };
 		819119E11D3E26CC0045E6B3 /* MCLeftSliderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSliderManager.m; sourceTree = "<group>"; };
 		819119E61D3E26D70045E6B3 /* MCAdvertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAdvertVC.h; sourceTree = "<group>"; };
@@ -388,8 +385,6 @@
 		81D466621D3C6D8F0046A783 /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
-				819119DE1D3E26CC0045E6B3 /* MCContent.h */,
-				819119DF1D3E26CC0045E6B3 /* MCContent.m */,
 				819119E01D3E26CC0045E6B3 /* MCLeftSliderManager.h */,
 				819119E11D3E26CC0045E6B3 /* MCLeftSliderManager.m */,
 				81D466631D3C6D8F0046A783 /* MCLeftSlideViewController.h */,
@@ -535,7 +530,6 @@
 				819119CD1D3E12850045E6B3 /* DKNightVersionManager.m in Sources */,
 				819119FF1D3E26D70045E6B3 /* MCLeftSortsViewController.m in Sources */,
 				819119D41D3E12850045E6B3 /* UINavigationBar+TintColor.m in Sources */,
-				819119E21D3E26CC0045E6B3 /* MCContent.m in Sources */,
 				81911A011D3E26D70045E6B3 /* MCOtherViewController.m in Sources */,
 				819119FE1D3E26D70045E6B3 /* MCFirstPageVIewController.m in Sources */,
 				819119FC1D3E26D70045E6B3 /* MCAdvertView.m in Sources */,

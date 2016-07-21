@@ -42,7 +42,8 @@
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
     }];
     [LoadingAnimationView loadingViewWithRect:CGRectMake(0, 0, kScreenWidth, kScreenHeight+64) OnView:self.view];
-
+    
+    
 }
 
 - (void)setAdUrl:(NSString *)adUrl

@@ -15,6 +15,8 @@
 #import "MCLeftSliderManager.h"
 #import "MCAdvertView.h"
 
+
+
 @interface AppDelegate ()
 
 @end
@@ -56,7 +58,11 @@
     MCLeftSlideViewController *rootVC = [[MCLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:tabVC];
     self.window.rootViewController = rootVC;
     
-    
+    // 启动图片
+    [self setAdvertViewController];
+}
+/// 启动图片设置
+-(void)setAdvertViewController{
     // 1.判断沙盒中是否存在广告图片，如果存在，直接显示
     NSString *filePath = [self getFilePathWithImageName:[kUserDefaults valueForKey:adImageName]];
     
@@ -65,13 +71,10 @@
         MCAdvertView *advertiseView = [[MCAdvertView alloc] initWithFrame:self.window.bounds];
         advertiseView.filePath = filePath;
         [advertiseView show];
-
-        
     }
     
     // 2.无论沙盒中是否存在广告图片，都需要重新调用广告接口，判断广告是否更新
     [self getAdvertisingImage];
-    
 }
 
 

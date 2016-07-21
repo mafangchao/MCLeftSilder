@@ -28,7 +28,7 @@
 
 #define kLeftAlpha 0.9  //左侧蒙版的最大值
 #define kLeftCenterX 30 //左侧初始偏移量
-#define kLeftScale 0.7 //左侧初始缩放比例
+#define kLeftScale 1.0 //左侧初始缩放比例
 
 #define vDeckCanNotPanViewTag    987654   // 不响应此侧滑的View的tag
 

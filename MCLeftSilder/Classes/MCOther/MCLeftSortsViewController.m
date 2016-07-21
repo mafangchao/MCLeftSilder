@@ -51,7 +51,7 @@
     UISwitch *lightButton = [UISwitch new];
     
     [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
-    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
+//    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
     
     [self.view addSubview:lightButton];
 

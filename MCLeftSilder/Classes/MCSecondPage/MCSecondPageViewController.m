@@ -27,6 +27,24 @@
         self.navigationController.navigationBar.nightBarTintColor = [UIColor blackColor];
 
     }];
+    UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    menuBtn.frame = CGRectMake(0, 0, 20, 18);
+    [menuBtn setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [menuBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
+
+}
+- (void) openOrCloseLeftList
+{
+    
+    if ([MCLeftSliderManager sharedInstance].LeftSlideVC.closed)
+    {
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC openLeftView];
+    }
+    else
+    {
+        [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];
+    }
 }
 //- (void)viewWillDisappear:(BOOL)animated
 //{
