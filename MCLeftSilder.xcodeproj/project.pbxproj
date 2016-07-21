@@ -27,6 +27,7 @@
 		81911A001D3E26D70045E6B3 /* MCMainNavgationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F51D3E26D70045E6B3 /* MCMainNavgationVC.m */; };
 		81911A011D3E26D70045E6B3 /* MCOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F71D3E26D70045E6B3 /* MCOtherViewController.m */; };
 		81911A021D3E26D70045E6B3 /* MCSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119FA1D3E26D70045E6B3 /* MCSecondPageViewController.m */; };
+		81911A081D40BD170045E6B3 /* MCAdvertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81911A071D40BD170045E6B3 /* MCAdvertManager.m */; };
 		81D4661F1D3C6C8C0046A783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4661E1D3C6C8C0046A783 /* main.m */; };
 		81D466221D3C6C8C0046A783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466211D3C6C8C0046A783 /* AppDelegate.m */; };
 		81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81D466291D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld */; };
@@ -98,6 +99,8 @@
 		819119F71D3E26D70045E6B3 /* MCOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOtherViewController.m; sourceTree = "<group>"; };
 		819119F91D3E26D70045E6B3 /* MCSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSecondPageViewController.h; sourceTree = "<group>"; };
 		819119FA1D3E26D70045E6B3 /* MCSecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSecondPageViewController.m; sourceTree = "<group>"; };
+		81911A061D40BD170045E6B3 /* MCAdvertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAdvertManager.h; sourceTree = "<group>"; };
+		81911A071D40BD170045E6B3 /* MCAdvertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAdvertManager.m; sourceTree = "<group>"; };
 		81D4661A1D3C6C8C0046A783 /* MCLeftSilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLeftSilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D4661E1D3C6C8C0046A783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81D466201D3C6C8C0046A783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				819119E71D3E26D70045E6B3 /* MCAdvertVC.m */,
 				819119E81D3E26D70045E6B3 /* MCAdvertView.h */,
 				819119E91D3E26D70045E6B3 /* MCAdvertView.m */,
+				81911A061D40BD170045E6B3 /* MCAdvertManager.h */,
+				81911A071D40BD170045E6B3 /* MCAdvertManager.m */,
 			);
 			path = MCAdvert;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				819119D71D3E12850045E6B3 /* UIView+BackgroundColor.m in Sources */,
 				81911A001D3E26D70045E6B3 /* MCMainNavgationVC.m in Sources */,
 				81911A021D3E26D70045E6B3 /* MCSecondPageViewController.m in Sources */,
+				81911A081D40BD170045E6B3 /* MCAdvertManager.m in Sources */,
 				819119D31D3E12850045E6B3 /* UINavigationBar+BarTintColor.m in Sources */,
 				819119E31D3E26CC0045E6B3 /* MCLeftSliderManager.m in Sources */,
 				819119CE1D3E12850045E6B3 /* NSObject+Night.m in Sources */,

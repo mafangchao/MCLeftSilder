@@ -69,11 +69,12 @@
         for (UIView *obj in self.leftVC.view.subviews) {
             if ([obj isKindOfClass:[UITableView class]]) {
                 self.leftTableview = (UITableView *)obj;
-            }else if ([obj isKindOfClass:[UISwitch class]]){
-                self.leftSwitch = (UISwitch *)obj;
             }
         }
-
+        self.leftTableview.backgroundColor = [UIColor clearColor];
+        self.leftTableview.frame = CGRectMake(kMainPageDistance, (kScreenHeight - 300)/2, kScreenWidth - kMainPageDistance*1.5, 300);
+        //设置左侧tableview的初始位置和缩放系数
+        self.leftTableview.transform = CGAffineTransformMakeScale(kLeftScale, kLeftScale);
         [self.view addSubview:self.leftVC.view];
         [self.view addSubview:self.mainVC.view];
         self.closed = YES;//初始时侧滑窗关闭

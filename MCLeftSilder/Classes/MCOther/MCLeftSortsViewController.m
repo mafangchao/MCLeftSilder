@@ -19,11 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-//    UIImageView *imageview = [[UIImageView alloc] initWithFrame:self.view.bounds];
-//    imageview.image = [UIImage imageNamed:@"leftbackiamge"];
-//    [self.view addSubview:imageview];
+
 
     UITableView *tableview = [[UITableView alloc] init];
     self.tableview = tableview;
@@ -34,10 +30,14 @@
     tableview.delegate  = self;
     tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:tableview];
-    tableview.backgroundColor = [UIColor clearColor];
-    tableview.frame = CGRectMake(kMainPageDistance, (kScreenHeight - 300)/2, kScreenWidth - kMainPageDistance*1.5, 300);
-    //设置左侧tableview的初始位置和缩放系数
-    tableview.transform = CGAffineTransformMakeScale(kLeftScale, kLeftScale);
+    
+  
+    UISwitch *lightButton = [UISwitch new];
+    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +100, kScreenHeight - 50, 200, 44);
+    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:lightButton];
+    // 设置夜间效果的颜色
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
@@ -46,18 +46,10 @@
         self.tableview.normalBackgroundColor = [UIColor clearColor];
         self.tableview.nightBackgroundColor = UIColorFromRGB(0x343434);
         self.tableview.nightSeparatorColor = UIColorFromRGB(0x313131);
-//        navigationLabel.nightTextColor = [UIColor whiteColor];
         self.navigationController.navigationBar.nightBarTintColor = UIColorFromRGB(0x444444);
         self.navigationItem.leftBarButtonItem.nightTintColor = [UIColor whiteColor];
         self.navigationItem.rightBarButtonItem.nightTintColor = [UIColor whiteColor];
     }];
-    UISwitch *lightButton = [UISwitch new];
-    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +100, kScreenHeight - 50, 200, 44);
-    [lightButton addTarget:self action:@selector(changeLight) forControlEvents:UIControlEventTouchUpInside];
-//    lightButton.frame = CGRectMake((kScreenWidth - kMainPageDistance)/2 +50, kScreenHeight - 50, 200, 44);
-    
-    [self.view addSubview:lightButton];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,9 +102,7 @@
     vc.titleName = cell.textLabel.text;
     [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];//关闭左侧抽屉
     [[MCLeftSliderManager sharedInstance].mainNavigationController pushViewController:vc animated:NO];
-//    if (indexPath.row == 0) {
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=General&path=Bluetooth"]];
-//    }
+
 }
 
 
