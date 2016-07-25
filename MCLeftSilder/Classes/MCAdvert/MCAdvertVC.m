@@ -26,6 +26,7 @@
     if (!self.adUrl) {
         self.adUrl = @"http://www.jianshu.com/users/c3bedfe6664d/latest_articles";
     }
+    self.navigationController.hidesBarsOnSwipe = YES;
     UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
     navigationLabel.text = @"点击进入广告链接";
     navigationLabel.textAlignment = NSTextAlignmentCenter;

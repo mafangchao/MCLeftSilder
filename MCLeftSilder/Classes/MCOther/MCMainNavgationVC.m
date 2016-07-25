@@ -18,6 +18,7 @@
     // 设置渲染的颜色
     [self.navigationBar setTintColor:[UIColor whiteColor]];
     self.tabBarController.hidesBottomBarWhenPushed = YES;
+
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
