@@ -22,11 +22,9 @@
 		819119FB1D3E26D70045E6B3 /* MCAdvertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119E71D3E26D70045E6B3 /* MCAdvertVC.m */; };
 		819119FC1D3E26D70045E6B3 /* MCAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119E91D3E26D70045E6B3 /* MCAdvertView.m */; };
 		819119FD1D3E26D70045E6B3 /* LoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119EC1D3E26D70045E6B3 /* LoadingAnimationView.m */; };
-		819119FE1D3E26D70045E6B3 /* MCFirstPageVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F01D3E26D70045E6B3 /* MCFirstPageVIewController.m */; };
 		819119FF1D3E26D70045E6B3 /* MCLeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F31D3E26D70045E6B3 /* MCLeftSortsViewController.m */; };
 		81911A001D3E26D70045E6B3 /* MCMainNavgationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F51D3E26D70045E6B3 /* MCMainNavgationVC.m */; };
 		81911A011D3E26D70045E6B3 /* MCOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119F71D3E26D70045E6B3 /* MCOtherViewController.m */; };
-		81911A021D3E26D70045E6B3 /* MCSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819119FA1D3E26D70045E6B3 /* MCSecondPageViewController.m */; };
 		81911A081D40BD170045E6B3 /* MCAdvertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81911A071D40BD170045E6B3 /* MCAdvertManager.m */; };
 		81D4661F1D3C6C8C0046A783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D4661E1D3C6C8C0046A783 /* main.m */; };
 		81D466221D3C6C8C0046A783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466211D3C6C8C0046A783 /* AppDelegate.m */; };
@@ -37,6 +35,13 @@
 		81D466461D3C6C8C0046A783 /* MCLeftSilderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466451D3C6C8C0046A783 /* MCLeftSilderUITests.m */; };
 		81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */; };
 		81D466681D3C6D8F0046A783 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466661D3C6D8F0046A783 /* UIView_extra.m */; };
+		9DE62EDF1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DE62EDA1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist */; };
+		9DE62EE01D48B7260059A5F7 /* STLVideoFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EDC1D48B7260059A5F7 /* STLVideoFunctions.m */; };
+		9DE62EE11D48B7260059A5F7 /* STLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EDE1D48B7260059A5F7 /* STLVideoViewController.m */; };
+		9DE62EE71D48B77C0059A5F7 /* MCFirstPageVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EE61D48B77C0059A5F7 /* MCFirstPageVIewController.m */; };
+		9DE62EED1D48B7A30059A5F7 /* MCSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EEA1D48B7A30059A5F7 /* MCSecondPageViewController.m */; };
+		9DE62EEF1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE62EEE1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 */; };
+		9DE62EF21D48B7FA0059A5F7 /* MCLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EF11D48B7FA0059A5F7 /* MCLoginVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,16 +94,12 @@
 		819119EB1D3E26D70045E6B3 /* LoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAnimationView.h; sourceTree = "<group>"; };
 		819119EC1D3E26D70045E6B3 /* LoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAnimationView.m; sourceTree = "<group>"; };
 		819119ED1D3E26D70045E6B3 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		819119EF1D3E26D70045E6B3 /* MCFirstPageVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFirstPageVIewController.h; sourceTree = "<group>"; };
-		819119F01D3E26D70045E6B3 /* MCFirstPageVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFirstPageVIewController.m; sourceTree = "<group>"; };
 		819119F21D3E26D70045E6B3 /* MCLeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLeftSortsViewController.h; sourceTree = "<group>"; };
 		819119F31D3E26D70045E6B3 /* MCLeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLeftSortsViewController.m; sourceTree = "<group>"; };
 		819119F41D3E26D70045E6B3 /* MCMainNavgationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainNavgationVC.h; sourceTree = "<group>"; };
 		819119F51D3E26D70045E6B3 /* MCMainNavgationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainNavgationVC.m; sourceTree = "<group>"; };
 		819119F61D3E26D70045E6B3 /* MCOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOtherViewController.h; sourceTree = "<group>"; };
 		819119F71D3E26D70045E6B3 /* MCOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOtherViewController.m; sourceTree = "<group>"; };
-		819119F91D3E26D70045E6B3 /* MCSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSecondPageViewController.h; sourceTree = "<group>"; };
-		819119FA1D3E26D70045E6B3 /* MCSecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSecondPageViewController.m; sourceTree = "<group>"; };
 		81911A061D40BD170045E6B3 /* MCAdvertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAdvertManager.h; sourceTree = "<group>"; };
 		81911A071D40BD170045E6B3 /* MCAdvertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAdvertManager.m; sourceTree = "<group>"; };
 		81D4661A1D3C6C8C0046A783 /* MCLeftSilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLeftSilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +121,18 @@
 		81D466651D3C6D8F0046A783 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		81D466661D3C6D8F0046A783 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
 		81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPrefixHeader.pch; sourceTree = "<group>"; };
+		9DE62EDA1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "C415F3F13BBD50B1-info.plist"; sourceTree = "<group>"; };
+		9DE62EDB1D48B7260059A5F7 /* STLVideoFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLVideoFunctions.h; sourceTree = "<group>"; };
+		9DE62EDC1D48B7260059A5F7 /* STLVideoFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLVideoFunctions.m; sourceTree = "<group>"; };
+		9DE62EDD1D48B7260059A5F7 /* STLVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLVideoViewController.h; sourceTree = "<group>"; };
+		9DE62EDE1D48B7260059A5F7 /* STLVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLVideoViewController.m; sourceTree = "<group>"; };
+		9DE62EE51D48B77C0059A5F7 /* MCFirstPageVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFirstPageVIewController.h; sourceTree = "<group>"; };
+		9DE62EE61D48B77C0059A5F7 /* MCFirstPageVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFirstPageVIewController.m; sourceTree = "<group>"; };
+		9DE62EE91D48B7A30059A5F7 /* MCSecondPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSecondPageViewController.h; sourceTree = "<group>"; };
+		9DE62EEA1D48B7A30059A5F7 /* MCSecondPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSecondPageViewController.m; sourceTree = "<group>"; };
+		9DE62EEE1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BridgeLoop-640p.mp4"; sourceTree = "<group>"; };
+		9DE62EF01D48B7FA0059A5F7 /* MCLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLoginVC.h; sourceTree = "<group>"; };
+		9DE62EF11D48B7FA0059A5F7 /* MCLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLoginVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,8 +308,9 @@
 		819119EE1D3E26D70045E6B3 /* MCFirstPage */ = {
 			isa = PBXGroup;
 			children = (
-				819119EF1D3E26D70045E6B3 /* MCFirstPageVIewController.h */,
-				819119F01D3E26D70045E6B3 /* MCFirstPageVIewController.m */,
+				9DE62EE21D48B7610059A5F7 /* Controller */,
+				9DE62EE31D48B7610059A5F7 /* Model */,
+				9DE62EE41D48B7610059A5F7 /* View */,
 			);
 			path = MCFirstPage;
 			sourceTree = "<group>";
@@ -317,8 +331,9 @@
 		819119F81D3E26D70045E6B3 /* MCSecondPage */ = {
 			isa = PBXGroup;
 			children = (
-				819119F91D3E26D70045E6B3 /* MCSecondPageViewController.h */,
-				819119FA1D3E26D70045E6B3 /* MCSecondPageViewController.m */,
+				9DE62EE81D48B7A30059A5F7 /* Controller */,
+				9DE62EEB1D48B7A30059A5F7 /* Model */,
+				9DE62EEC1D48B7A30059A5F7 /* View */,
 			);
 			path = MCSecondPage;
 			sourceTree = "<group>";
@@ -346,6 +361,7 @@
 		81D4661C1D3C6C8C0046A783 /* MCLeftSilder */ = {
 			isa = PBXGroup;
 			children = (
+				9DE62ED91D48B7260059A5F7 /* STLBGVideo */,
 				819119E41D3E26D70045E6B3 /* Classes */,
 				819119AB1D3E12850045E6B3 /* DKNightVerson */,
 				81D466621D3C6D8F0046A783 /* LeftSlideViewController */,
@@ -362,6 +378,7 @@
 				81D4662C1D3C6C8C0046A783 /* Assets.xcassets */,
 				81D4662E1D3C6C8C0046A783 /* LaunchScreen.storyboard */,
 				81D466311D3C6C8C0046A783 /* Info.plist */,
+				9DE62EEE1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 */,
 				81D466291D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld */,
 				81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */,
 				81D4661E1D3C6C8C0046A783 /* main.m */,
@@ -398,6 +415,66 @@
 				81D466661D3C6D8F0046A783 /* UIView_extra.m */,
 			);
 			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		9DE62ED91D48B7260059A5F7 /* STLBGVideo */ = {
+			isa = PBXGroup;
+			children = (
+				9DE62EDA1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist */,
+				9DE62EDB1D48B7260059A5F7 /* STLVideoFunctions.h */,
+				9DE62EDC1D48B7260059A5F7 /* STLVideoFunctions.m */,
+				9DE62EDD1D48B7260059A5F7 /* STLVideoViewController.h */,
+				9DE62EDE1D48B7260059A5F7 /* STLVideoViewController.m */,
+			);
+			path = STLBGVideo;
+			sourceTree = "<group>";
+		};
+		9DE62EE21D48B7610059A5F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DE62EE51D48B77C0059A5F7 /* MCFirstPageVIewController.h */,
+				9DE62EE61D48B77C0059A5F7 /* MCFirstPageVIewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DE62EE31D48B7610059A5F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DE62EE41D48B7610059A5F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DE62EE81D48B7A30059A5F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DE62EE91D48B7A30059A5F7 /* MCSecondPageViewController.h */,
+				9DE62EEA1D48B7A30059A5F7 /* MCSecondPageViewController.m */,
+				9DE62EF01D48B7FA0059A5F7 /* MCLoginVC.h */,
+				9DE62EF11D48B7FA0059A5F7 /* MCLoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DE62EEB1D48B7A30059A5F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DE62EEC1D48B7A30059A5F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,7 +580,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE62EEF1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 in Resources */,
 				81D466301D3C6C8C0046A783 /* LaunchScreen.storyboard in Resources */,
+				9DE62EDF1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist in Resources */,
 				81D4662D1D3C6C8C0046A783 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,15 +610,18 @@
 			files = (
 				819119FB1D3E26D70045E6B3 /* MCAdvertVC.m in Sources */,
 				81D466681D3C6D8F0046A783 /* UIView_extra.m in Sources */,
+				9DE62EE71D48B77C0059A5F7 /* MCFirstPageVIewController.m in Sources */,
 				819119D51D3E12850045E6B3 /* UITabBar+BarTintColor.m in Sources */,
 				819119CD1D3E12850045E6B3 /* DKNightVersionManager.m in Sources */,
 				819119FF1D3E26D70045E6B3 /* MCLeftSortsViewController.m in Sources */,
 				819119D41D3E12850045E6B3 /* UINavigationBar+TintColor.m in Sources */,
 				81911A011D3E26D70045E6B3 /* MCOtherViewController.m in Sources */,
-				819119FE1D3E26D70045E6B3 /* MCFirstPageVIewController.m in Sources */,
+				9DE62EE01D48B7260059A5F7 /* STLVideoFunctions.m in Sources */,
 				819119FC1D3E26D70045E6B3 /* MCAdvertView.m in Sources */,
 				81D466221D3C6C8C0046A783 /* AppDelegate.m in Sources */,
+				9DE62EED1D48B7A30059A5F7 /* MCSecondPageViewController.m in Sources */,
 				819119D21D3E12850045E6B3 /* UILabel+TextColor.m in Sources */,
+				9DE62EE11D48B7260059A5F7 /* STLVideoViewController.m in Sources */,
 				819119CF1D3E12850045E6B3 /* UINavigationBar+Animation.m in Sources */,
 				819119D61D3E12850045E6B3 /* UITableView+SeparatorColor.m in Sources */,
 				819119D11D3E12850045E6B3 /* UIButton+TitleColor.m in Sources */,
@@ -549,11 +631,11 @@
 				819119D01D3E12850045E6B3 /* UIBarButtonItem+TintColor.m in Sources */,
 				819119D71D3E12850045E6B3 /* UIView+BackgroundColor.m in Sources */,
 				81911A001D3E26D70045E6B3 /* MCMainNavgationVC.m in Sources */,
-				81911A021D3E26D70045E6B3 /* MCSecondPageViewController.m in Sources */,
 				81911A081D40BD170045E6B3 /* MCAdvertManager.m in Sources */,
 				819119D31D3E12850045E6B3 /* UINavigationBar+BarTintColor.m in Sources */,
 				819119E31D3E26CC0045E6B3 /* MCLeftSliderManager.m in Sources */,
 				819119CE1D3E12850045E6B3 /* NSObject+Night.m in Sources */,
+				9DE62EF21D48B7FA0059A5F7 /* MCLoginVC.m in Sources */,
 				81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

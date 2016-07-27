@@ -16,7 +16,7 @@
     [super viewDidLoad];
     [self.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
     // 设置渲染的颜色
-    [self.navigationBar setTintColor:[UIColor whiteColor]];
+//    [self.navigationBar setTintColor:[UIColor orangeColor]];
     self.tabBarController.hidesBottomBarWhenPushed = YES;
 
 }

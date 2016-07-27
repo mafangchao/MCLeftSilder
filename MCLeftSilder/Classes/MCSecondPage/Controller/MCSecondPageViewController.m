@@ -9,15 +9,21 @@
 #import "MCSecondPageViewController.h"
 #import "DKNightVersion.h"
 #import "MCLeftSliderManager.h"
+#import "MCLoginVC.h"
 @implementation MCSecondPageViewController
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    // 设置黑夜效果
+    [self setNeightEffect];
+}
+/// 黑夜模式设置
+-(void)setNeightEffect{
     UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
     navigationLabel.text = @"设置";
     navigationLabel.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = navigationLabel;
-
+    
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);
@@ -25,14 +31,15 @@
         self.view.nightBackgroundColor = UIColorFromRGB(0x343434);
         navigationLabel.nightTextColor = [UIColor whiteColor];
         self.navigationController.navigationBar.nightBarTintColor = [UIColor blackColor];
-
+        
     }];
     UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     menuBtn.frame = CGRectMake(0, 0, 20, 18);
     [menuBtn setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [menuBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
-
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStyleDone target:self action:@selector(login)];
 }
 - (void) openOrCloseLeftList
 {
@@ -46,18 +53,13 @@
         [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];
     }
 }
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [super viewWillDisappear:animated];
-//    
-//    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:NO];
-//}
-//
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    
-//    [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:YES];
-//}
+/// 登录按钮点击事件
+-(void)login{
+    MCLoginVC *vc = [[MCLoginVC alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self presentViewController:navVC animated:YES completion:nil];
+    
+}
 
 @end
