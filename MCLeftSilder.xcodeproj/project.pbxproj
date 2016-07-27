@@ -42,6 +42,7 @@
 		9DE62EED1D48B7A30059A5F7 /* MCSecondPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EEA1D48B7A30059A5F7 /* MCSecondPageViewController.m */; };
 		9DE62EEF1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE62EEE1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 */; };
 		9DE62EF21D48B7FA0059A5F7 /* MCLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EF11D48B7FA0059A5F7 /* MCLoginVC.m */; };
+		9DE62EF71D48BDC30059A5F7 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EF61D48BDC30059A5F7 /* UICountingLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,8 @@
 		9DE62EEE1D48B7BF0059A5F7 /* BridgeLoop-640p.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BridgeLoop-640p.mp4"; sourceTree = "<group>"; };
 		9DE62EF01D48B7FA0059A5F7 /* MCLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLoginVC.h; sourceTree = "<group>"; };
 		9DE62EF11D48B7FA0059A5F7 /* MCLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLoginVC.m; sourceTree = "<group>"; };
+		9DE62EF51D48BDC30059A5F7 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		9DE62EF61D48BDC30059A5F7 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +364,8 @@
 		81D4661C1D3C6C8C0046A783 /* MCLeftSilder */ = {
 			isa = PBXGroup;
 			children = (
+				9DE62EF31D48BDAE0059A5F7 /* Category */,
+				9DE62EF41D48BDAE0059A5F7 /* thirdLib */,
 				9DE62ED91D48B7260059A5F7 /* STLBGVideo */,
 				819119E41D3E26D70045E6B3 /* Classes */,
 				819119AB1D3E12850045E6B3 /* DKNightVerson */,
@@ -475,6 +480,22 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9DE62EF31D48BDAE0059A5F7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9DE62EF51D48BDC30059A5F7 /* UICountingLabel.h */,
+				9DE62EF61D48BDC30059A5F7 /* UICountingLabel.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9DE62EF41D48BDAE0059A5F7 /* thirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = thirdLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -625,6 +646,7 @@
 				819119CF1D3E12850045E6B3 /* UINavigationBar+Animation.m in Sources */,
 				819119D61D3E12850045E6B3 /* UITableView+SeparatorColor.m in Sources */,
 				819119D11D3E12850045E6B3 /* UIButton+TitleColor.m in Sources */,
+				9DE62EF71D48BDC30059A5F7 /* UICountingLabel.m in Sources */,
 				819119FD1D3E26D70045E6B3 /* LoadingAnimationView.m in Sources */,
 				81D4661F1D3C6C8C0046A783 /* main.m in Sources */,
 				81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */,

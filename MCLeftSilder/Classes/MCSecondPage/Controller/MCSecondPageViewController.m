@@ -10,13 +10,35 @@
 #import "DKNightVersion.h"
 #import "MCLeftSliderManager.h"
 #import "MCLoginVC.h"
+#import "UICountingLabel.h"
+
+@interface MCSecondPageViewController ()
+@property(nonatomic,strong)UICountingLabel *scoreLabel;
+@end
 @implementation MCSecondPageViewController
 
 -(void)viewDidLoad{
     [super viewDidLoad];
     // 设置黑夜效果
     [self setNeightEffect];
+    _scoreLabel = [[UICountingLabel alloc] initWithFrame:CGRectMake(10, 90, 200, 40)];
+    [self.view addSubview:_scoreLabel];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = kCFNumberFormatterDecimalStyle;
+    _scoreLabel.formatBlock = ^NSString* (CGFloat value)
+    {
+        NSString* formatted = [formatter stringFromNumber:@((int)value)];
+        return [NSString stringWithFormat:@"Score: %@",formatted];
+    };
+    _scoreLabel.method = UILabelCountingMethodEaseOut;
+
 }
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+  
+    [_scoreLabel countFrom:0 to:10000 withDuration:2.5];
+}
+
 /// 黑夜模式设置
 -(void)setNeightEffect{
     UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
