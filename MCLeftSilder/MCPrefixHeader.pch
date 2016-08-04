@@ -14,7 +14,7 @@
 
 #define MAS_SHORTHAND
 
-
+#import "TipsManager.h"
 
 
 #endif

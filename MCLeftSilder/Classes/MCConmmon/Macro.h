@@ -43,4 +43,7 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 //项目整体背景色
 #define MCBaseColor kColorWithRGB(0xf6f6f6)
 
+#define Rect(x, y, w, h)                    CGRectMake(x, y, w, h)
+#define FONT(fontSize)                      [UIFont systemFontOfSize:fontSize]
+
 #endif /* Macro_h */

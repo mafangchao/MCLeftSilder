@@ -15,7 +15,8 @@
 #import "MCLeftSliderManager.h"
 #import "MCAdvertView.h"
 #import "MCAdvertManager.h"
-
+#import "MCMainTabBar.h"
+#import "MCMainTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -30,8 +31,6 @@
     [self.window makeKeyAndVisible];
     
     [self initRootViewController];
-    
-
 
     return YES;
 }
@@ -50,7 +49,7 @@
     secondNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
     secondVC.title = @"设置";
     
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    MCMainTabBarVC *tabVC = [[MCMainTabBarVC alloc] init];
     [tabVC setViewControllers:@[firstNav,secondNav]];
     tabVC.tabBar.tintColor = [UIColor orangeColor];
     
@@ -61,7 +60,6 @@
     // 启动图片
     [[MCAdvertManager sharedInstance] setAdvertViewController];
 }
-
 
 
 @end

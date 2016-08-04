@@ -35,6 +35,9 @@
 		81D466461D3C6C8C0046A783 /* MCLeftSilderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466451D3C6C8C0046A783 /* MCLeftSilderUITests.m */; };
 		81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */; };
 		81D466681D3C6D8F0046A783 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466661D3C6D8F0046A783 /* UIView_extra.m */; };
+		9D8C1A0F1D531E2900C5A479 /* MCMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A0E1D531E2900C5A479 /* MCMainTabBar.m */; };
+		9D8C1A121D53239400C5A479 /* MCMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A111D53239400C5A479 /* MCMainTabBarVC.m */; };
+		9D8C1A151D532BDD00C5A479 /* TipsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A141D532BDD00C5A479 /* TipsManager.m */; };
 		9DE62EDF1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DE62EDA1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist */; };
 		9DE62EE01D48B7260059A5F7 /* STLVideoFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EDC1D48B7260059A5F7 /* STLVideoFunctions.m */; };
 		9DE62EE11D48B7260059A5F7 /* STLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE62EDE1D48B7260059A5F7 /* STLVideoViewController.m */; };
@@ -122,6 +125,12 @@
 		81D466651D3C6D8F0046A783 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		81D466661D3C6D8F0046A783 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
 		81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPrefixHeader.pch; sourceTree = "<group>"; };
+		9D8C1A0D1D531E2900C5A479 /* MCMainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainTabBar.h; sourceTree = "<group>"; };
+		9D8C1A0E1D531E2900C5A479 /* MCMainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainTabBar.m; sourceTree = "<group>"; };
+		9D8C1A101D53239400C5A479 /* MCMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainTabBarVC.h; sourceTree = "<group>"; };
+		9D8C1A111D53239400C5A479 /* MCMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainTabBarVC.m; sourceTree = "<group>"; };
+		9D8C1A131D532BDD00C5A479 /* TipsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsManager.h; sourceTree = "<group>"; };
+		9D8C1A141D532BDD00C5A479 /* TipsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsManager.m; sourceTree = "<group>"; };
 		9DE62EDA1D48B7260059A5F7 /* C415F3F13BBD50B1-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "C415F3F13BBD50B1-info.plist"; sourceTree = "<group>"; };
 		9DE62EDB1D48B7260059A5F7 /* STLVideoFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLVideoFunctions.h; sourceTree = "<group>"; };
 		9DE62EDC1D48B7260059A5F7 /* STLVideoFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLVideoFunctions.m; sourceTree = "<group>"; };
@@ -327,6 +336,10 @@
 				819119F51D3E26D70045E6B3 /* MCMainNavgationVC.m */,
 				819119F61D3E26D70045E6B3 /* MCOtherViewController.h */,
 				819119F71D3E26D70045E6B3 /* MCOtherViewController.m */,
+				9D8C1A0D1D531E2900C5A479 /* MCMainTabBar.h */,
+				9D8C1A0E1D531E2900C5A479 /* MCMainTabBar.m */,
+				9D8C1A101D53239400C5A479 /* MCMainTabBarVC.h */,
+				9D8C1A111D53239400C5A479 /* MCMainTabBarVC.m */,
 			);
 			path = MCOther;
 			sourceTree = "<group>";
@@ -494,6 +507,8 @@
 		9DE62EF41D48BDAE0059A5F7 /* thirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				9D8C1A131D532BDD00C5A479 /* TipsManager.h */,
+				9D8C1A141D532BDD00C5A479 /* TipsManager.m */,
 			);
 			path = thirdLib;
 			sourceTree = "<group>";
@@ -634,7 +649,9 @@
 				9DE62EE71D48B77C0059A5F7 /* MCFirstPageVIewController.m in Sources */,
 				819119D51D3E12850045E6B3 /* UITabBar+BarTintColor.m in Sources */,
 				819119CD1D3E12850045E6B3 /* DKNightVersionManager.m in Sources */,
+				9D8C1A121D53239400C5A479 /* MCMainTabBarVC.m in Sources */,
 				819119FF1D3E26D70045E6B3 /* MCLeftSortsViewController.m in Sources */,
+				9D8C1A151D532BDD00C5A479 /* TipsManager.m in Sources */,
 				819119D41D3E12850045E6B3 /* UINavigationBar+TintColor.m in Sources */,
 				81911A011D3E26D70045E6B3 /* MCOtherViewController.m in Sources */,
 				9DE62EE01D48B7260059A5F7 /* STLVideoFunctions.m in Sources */,
@@ -651,6 +668,7 @@
 				81D4661F1D3C6C8C0046A783 /* main.m in Sources */,
 				81D4662B1D3C6C8C0046A783 /* MCLeftSilder.xcdatamodeld in Sources */,
 				819119D01D3E12850045E6B3 /* UIBarButtonItem+TintColor.m in Sources */,
+				9D8C1A0F1D531E2900C5A479 /* MCMainTabBar.m in Sources */,
 				819119D71D3E12850045E6B3 /* UIView+BackgroundColor.m in Sources */,
 				81911A001D3E26D70045E6B3 /* MCMainNavgationVC.m in Sources */,
 				81911A081D40BD170045E6B3 /* MCAdvertManager.m in Sources */,

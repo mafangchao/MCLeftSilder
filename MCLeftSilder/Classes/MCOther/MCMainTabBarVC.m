@@ -7,6 +7,7 @@
 //
 
 #import "MCMainTabBarVC.h"
+#import "MCMainTabBar.h"
 
 @interface MCMainTabBarVC ()
 
@@ -16,15 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setUpTabBar];
 }
 
-//-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-//    NSLog(@"%@",item);
-//}
-//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
-//    NSLog(@"---------%@",viewController);
-//}
+#pragma mark - 3、添加自定义tabBar------
+- (void)setUpTabBar
+{
+    // 1、创建自定义的CHTabBar;
+    MCMainTabBar *tabBar = [[MCMainTabBar alloc] init];
+    [self setValue:tabBar forKey:@"tabBar"];
+}
 
 
 @end
