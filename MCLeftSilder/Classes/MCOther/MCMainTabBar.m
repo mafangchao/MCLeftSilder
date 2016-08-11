@@ -67,17 +67,14 @@
     self.plusButton.center = CGPointMake(w * 0.5, h*0.01);
 }
 
+/// 关键的方法如果在加号里面返回YES
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    NSLog(@"%@",NSStringFromCGPoint(point));
     if ([super pointInside:point withEvent:event]) {
-        NSLog(@"--------------");
         return [super pointInside:point withEvent:event];
     }else{
         CGRect rect = [self convertRect:self.plusButton.frame toView:self];
-        NSLog(@"--------------");
         return CGRectContainsPoint(rect, point);
     }
-    
 }
 
 // 重写加号按钮的getter方法进行赋值
