@@ -77,12 +77,14 @@
 - (void)pushToAd {
     
     MCAdvertVC *adVc = [[MCAdvertVC alloc] init];
+//    adVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:adVc animated:YES];
     
 }
 
 -(void)switchClick{
     MCAdvertVC *adVc = [[MCAdvertVC alloc] init];
+    adVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:adVc animated:YES];
 }
 

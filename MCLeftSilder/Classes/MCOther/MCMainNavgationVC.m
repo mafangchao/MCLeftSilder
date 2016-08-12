@@ -22,13 +22,13 @@
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    self.tabBarController.tabBar.hidden = YES;
+//    self.tabBarController.tabBar.hidden = YES;
     [[MCLeftSliderManager sharedInstance].LeftSlideVC setPanEnabled:NO];
     [super pushViewController:viewController animated:animated];
     
 }
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
-    self.tabBarController.tabBar.hidden = NO;
+//    self.tabBarController.tabBar.hidden = NO;
     NSLog(@"%@-----%@",self.viewControllers.firstObject,self.viewControllers.lastObject);
     
     

@@ -43,10 +43,16 @@
         self.navigationController.navigationBar.nightTintColor = [UIColor redColor];
     }];
     [LoadingAnimationView loadingViewWithRect:CGRectMake(0, 0, kScreenWidth, kScreenHeight+64) OnView:self.view];
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"push" style:UIBarButtonItemStylePlain target:self action:@selector(pushViewController)];
     
 }
 
+-(void)pushViewController{
+    MCAdvertVC *adVc = [[MCAdvertVC alloc] init];
+//    adVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:adVc animated:YES];
+    
+}
 - (void)setAdUrl:(NSString *)adUrl
 {
     _adUrl = adUrl;
