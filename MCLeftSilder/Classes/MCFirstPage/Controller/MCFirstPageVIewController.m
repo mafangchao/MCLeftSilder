@@ -52,6 +52,9 @@
     _tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     _tabelView.delegate = self;
     _tabelView.dataSource = self;
+    _tabelView.rowHeight = 66;
+    _tabelView.estimatedSectionFooterHeight = 0;
+    _tabelView.estimatedSectionHeaderHeight = 0;
     [self.view addSubview:_tabelView];
     
 }

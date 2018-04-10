@@ -23,8 +23,9 @@
     _webView.backgroundColor = MCBaseColor;
     _webView.delegate = self;
     _webView.hidden = YES;
+    [self.view addSubview:_webView];
     if (!self.adUrl) {
-        self.adUrl = @"http://www.jianshu.com/users/c3bedfe6664d/latest_articles";
+        self.adUrl = @"https://www.jianshu.com/u/c3bedfe6664d";
     }
 //    self.navigationController.hidesBarsOnSwipe = YES;
     UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
@@ -33,7 +34,7 @@
     self.navigationItem.titleView = navigationLabel;
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.adUrl]];
     [_webView loadRequest:request];
-    [self.view addSubview:_webView];
+    
     @weakify(self);
     [self addColorChangedBlock:^{
         @strongify(self);

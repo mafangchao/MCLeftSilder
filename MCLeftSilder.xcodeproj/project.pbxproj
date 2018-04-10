@@ -35,6 +35,7 @@
 		81D466461D3C6C8C0046A783 /* MCLeftSilderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466451D3C6C8C0046A783 /* MCLeftSilderUITests.m */; };
 		81D466671D3C6D8F0046A783 /* MCLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466641D3C6D8F0046A783 /* MCLeftSlideViewController.m */; };
 		81D466681D3C6D8F0046A783 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D466661D3C6D8F0046A783 /* UIView_extra.m */; };
+		9BA32827207C66E600F4FD6C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA32826207C66E500F4FD6C /* MobileCoreServices.framework */; };
 		9D8C1A0F1D531E2900C5A479 /* MCMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A0E1D531E2900C5A479 /* MCMainTabBar.m */; };
 		9D8C1A121D53239400C5A479 /* MCMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A111D53239400C5A479 /* MCMainTabBarVC.m */; };
 		9D8C1A151D532BDD00C5A479 /* TipsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C1A141D532BDD00C5A479 /* TipsManager.m */; };
@@ -126,6 +127,7 @@
 		81D466651D3C6D8F0046A783 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		81D466661D3C6D8F0046A783 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
 		81D4670D1D3DD40B0046A783 /* MCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPrefixHeader.pch; sourceTree = "<group>"; };
+		9BA32826207C66E500F4FD6C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		9D8C1A0D1D531E2900C5A479 /* MCMainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainTabBar.h; sourceTree = "<group>"; };
 		9D8C1A0E1D531E2900C5A479 /* MCMainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainTabBar.m; sourceTree = "<group>"; };
 		9D8C1A101D53239400C5A479 /* MCMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainTabBarVC.h; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA32827207C66E600F4FD6C /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +367,7 @@
 				81D466391D3C6C8C0046A783 /* MCLeftSilderTests */,
 				81D466441D3C6C8C0046A783 /* MCLeftSilderUITests */,
 				81D4661B1D3C6C8C0046A783 /* Products */,
+				9BA32825207C66E500F4FD6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -436,6 +440,14 @@
 				81D466661D3C6D8F0046A783 /* UIView_extra.m */,
 			);
 			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		9BA32825207C66E500F4FD6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BA32826207C66E500F4FD6C /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9DE62ED91D48B7260059A5F7 /* STLBGVideo */ = {

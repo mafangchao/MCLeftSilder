@@ -101,6 +101,7 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     vc.titleName = cell.textLabel.text;
     [[MCLeftSliderManager sharedInstance].LeftSlideVC closeLeftView];//关闭左侧抽屉
+    vc.hidesBottomBarWhenPushed = YES;
     [[MCLeftSliderManager sharedInstance].mainNavigationController pushViewController:vc animated:NO];
 
 }
